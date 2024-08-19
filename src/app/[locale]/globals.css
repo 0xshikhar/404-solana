@@ -1,0 +1,98 @@
+/* Global Styling here */
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* In some parts of the world, including China, google services don't work.
+So better to load fonts from our site */
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../../public/fonts/LuckiestGuy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../../public/fonts/Nunito-Medium.ttf');
+}
+
+* body,
+* {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Luckiest Guy';
+}
+
+.font-nutino {
+  font-family: 'Nunito';
+}
+
+.bg-shape {
+  background-image: url('../../../public/images/shape.png');
+}
+
+.roadmap-bg {
+  background-image: url('../../../public/images/roadmap-bg.png');
+}
+
+@media (min-width: 768px) {
+  .bg-companion {
+    background-image: url('../../../public/images/bg-money.png');
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-companion {
+    background-color: #4eb863;
+  }
+}
+
+.slick-slide > div > div {
+  padding-bottom: 40px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-slide > div {
+  padding: 0 10px;
+}
+
+.cat-img {
+  width: 100%;
+}
+
+.cta-button {
+  transition: all 0.3s ease;
+  animation: breathe 3s infinite;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.table-main::-webkit-scrollbar {
+  height: 0;
+}
+
+@media (min-width: 768px) {
+  .bg-shape2 {
+    object-fit: cover;
+    object-position: left;
+    height: 100px !important;
+  }
+}
